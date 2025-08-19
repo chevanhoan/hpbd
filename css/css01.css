@@ -95,3 +95,84 @@ h4 {
   left: 270px;
   color: #b78690;
 }
+
+
+#myModal .modal-dialog {
+  max-width: 100%;   /* full chiều ngang */
+  margin: 0;         /* bỏ khoảng cách hai bên */
+}
+
+#myModal .modal-content {
+  width: 100%;       /* full width trong dialog */
+  border-radius: 10px; /* bo góc nhẹ, có thể bỏ */
+}
+
+body.modal-open {
+  overflow-x: hidden; 
+}
+
+#myModal .modal-dialog {
+  margin: 0;          /* bỏ khoảng trắng 2 bên */
+  max-width: 100%;    /* cho full chiều ngang */
+  width: 100%;
+}
+
+#myModal .modal-content {
+  border-radius: 0;   /* bỏ bo góc (nếu muốn) */
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Nếu muốn modal co giãn tuỳ màn hình */
+@media (max-width: 768px) {
+  #myModal .modal-dialog {
+    max-width: 70%;  /* chỉ chiếm 95% màn hình trên mobile */
+  }
+  .top-right {
+    position: absolute;
+    top: 16px;
+    right: 85px;
+    color: #728e98;
+    font-size: 90%;
+  }
+
+  .bottom-right {
+    position: absolute;
+    bottom: 211px;
+    right: 8px;
+    color: #6c7c6b;
+    font-size: 80%;
+  }
+
+  .top-left {
+    position: absolute;
+    top: 105px;
+    right: 29px;
+    color: #6c7c6b;
+    font-size: 80%;
+  }
+
+  .and {
+    position: absolute;
+    bottom: 135px;
+    left: 210px;
+    color: #6c7c6b;
+    font-size: 80%;
+}
+
+  .center {
+    position: absolute;
+    bottom: 96px;
+    left: 185px;
+    color: #6c7c6b;
+    font-size: 80%;
+}
+
+  .bottom-left {
+    position: absolute;
+    bottom: 5px;
+    left: 190px;
+    color: #b78690;
+  }
+}
